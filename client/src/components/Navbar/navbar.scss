@@ -1,0 +1,121 @@
+.nav-container {
+    position: fixed;
+    z-index: 99;
+
+    .nav-wrapper {
+        width: 100vw;
+        height: 56px;
+        background: rgb(255,244,226);
+        color: rgb(0, 0, 0);
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            opacity: .85;
+
+            img {
+                width: 42px;
+                height: 42px;
+            }
+
+            span {
+                margin-left: 4px;
+            }
+        }
+
+        .nav-middle-wrapper {
+            position: absolute;
+            top: 50%;  
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            width: 690px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .search {
+
+                input {
+                    width: 300px;
+                    border: 1px solid transparent;
+                    background: rgb(255,234,206);
+                    border-radius: 12px;
+                    font-weight: 200;
+                    padding: 7px 12px;
+                    transition: .4s;
+
+                    &:hover {
+                        border: 1px solid rgba(248, 196, 128, .5);
+                        background: white;
+                        box-shadow: rgba(235, 178, 104, 0.1) 0px 0px 0px 3px;
+                    }
+
+                    &:focus {
+                        border: 1px solid rgb(248, 196, 128);
+                        background: white;
+                        box-shadow: rgba(235, 178, 104, 0.1) 0px 0px 0px 3px;
+                    }
+
+                    &:active {
+                        border: 1px solid rgb(248, 196, 128);
+                        background: white;
+                        box-shadow: rgba(235, 178, 104, 0.1) 0px 0px 0px 3px;
+                    }
+                }
+            }
+
+            .spune {
+                
+                .spune-bttn {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 18px;
+                    background: rgb(250, 189, 109);
+                    border: 1px solid transparent;
+                    padding: 5px 18px;
+                    color: white;
+                    font-weight: 400;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: rgb(255, 187, 99);
+                        box-shadow: rgba(250, 189, 109, 0.2) 0px 0px 0px 3px;
+                    }        
+                    
+                    &:focus {
+                        background: rgb(255, 187, 99);
+                        outline: none;
+                    }   
+
+                    &:active {
+                        background: rgb(255, 187, 99);
+                        outline: none;
+                    }   
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+        .nav-log-into {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                
+                svg {
+                    margin-right: 2.5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.rightbar-container {
+    position: relative;
+
+    .rightbar-wrapper {
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        background: rgba(253, 253, 253, .7);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        height: 100px;
+        width: 210px;
+    }
+}
